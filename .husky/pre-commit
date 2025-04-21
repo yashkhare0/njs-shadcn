@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # Temporarily comment out lint-staged to allow commit
-# npx lint-staged
+npx lint-staged

@@ -1,7 +1,8 @@
 'use client';
 
-import * as React from 'react';
+import type * as React from 'react';
 import * as AvatarPrimitive from '@radix-ui/react-avatar';
+import SafeImage from './safe-image';
 
 import { cn } from '@/lib/utils';
 
@@ -15,8 +16,30 @@ function Avatar({ className, ...props }: React.ComponentProps<typeof AvatarPrimi
   );
 }
 
-function AvatarImage({ className, ...props }: React.ComponentProps<typeof AvatarPrimitive.Image>) {
-  return (
+type AvatarImageProps = React.ComponentProps<typeof AvatarPrimitive.Image> & {
+  nextImg?: boolean;
+  alt?: string;
+  fallbackSrc?: string;
+};
+
+function AvatarImage({
+  className,
+  nextImg,
+  alt = '',
+  fallbackSrc = '/images/placeholder.png',
+  ...props
+}: AvatarImageProps) {
+  return nextImg ? (
+    <div className={cn('aspect-square size-full relative', className)}>
+      <SafeImage
+        fill
+        src={props.src as string}
+        alt={alt}
+        fallbackSrc={fallbackSrc}
+        className="object-cover"
+      />
+    </div>
+  ) : (
     <AvatarPrimitive.Image
       data-slot="avatar-image"
       className={cn('aspect-square size-full', className)}

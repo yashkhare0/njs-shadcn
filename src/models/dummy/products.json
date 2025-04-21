@@ -4,7 +4,7 @@
     "name": "Modern Desk Chair",
     "description": "Ergonomic desk chair with lumbar support and adjustable height.",
     "price": 249.99,
-    "image": "https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=500&h=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1744033206220-ad08fa9a6d7e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "furniture"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Mechanical Keyboard",
     "description": "Tactile mechanical keyboard with RGB backlighting and programmable keys.",
     "price": 129.99,
-    "image": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500&h=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1744059510494-3e071c0b3596?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "electronics"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Wireless Headphones",
     "description": "Over-ear noise cancelling headphones with 30-hour battery life.",
     "price": 199.99,
-    "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=500&h=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1744767968954-f3c06e118437?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "electronics"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Minimalist Desk Lamp",
     "description": "Adjustable LED desk lamp with 5 color temperatures and touch controls.",
     "price": 79.99,
-    "image": "https://images.unsplash.com/photo-1534281260923-a704c344be38?w=500&h=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1744631370640-515114c869fb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "lighting"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Standing Desk",
     "description": "Electric standing desk with memory settings and cable management.",
     "price": 499.99,
-    "image": "https://images.unsplash.com/photo-1595515106864-077d54b1749c?w=500&h=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1744614053463-491122164435?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "furniture"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Wireless Mouse",
     "description": "Ergonomic wireless mouse with customizable buttons and precision tracking.",
     "price": 49.99,
-    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500&h=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1744916577205-cb1ada826b3a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "electronics"
   }
 ]

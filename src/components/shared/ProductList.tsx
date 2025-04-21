@@ -4,6 +4,7 @@ import { useProducts } from '@/hooks/useProducts';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/shared';
 import { formatCurrency } from '@/utils';
+import Image from 'next/image';
 
 export function ProductList() {
   const { products, isLoading, isError, error } = useProducts();
@@ -32,7 +33,9 @@ export function ProductList() {
           className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
         >
           {product.image && (
-            <img src={product.image} alt={product.name} className="w-full h-48 object-cover" />
+            <div className="relative w-full h-48">
+              <Image src={product.image} alt={product.name} fill style={{ objectFit: 'cover' }} />
+            </div>
           )}
           <div className="p-4">
             <h3 className="text-lg font-bold">{product.name}</h3>
