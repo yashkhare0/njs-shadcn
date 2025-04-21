@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:staged": "eslint --fix",
     "format": "prettier --write .",
     "prepare": "husky install",
     "test": "jest",
@@ -14,9 +15,12 @@
     "test:coverage": "jest --coverage"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx,json}": [
-      "npm run format",
-      "npm run lint"
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
     ]
   },
   "dependencies": {
