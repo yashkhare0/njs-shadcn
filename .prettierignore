@@ -1,0 +1,11 @@
+.next
+node_modules
+build
+dist
+public
+**/coverage
+*.min.js
+*.config.js
+*.config.mjs
+next-env.d.ts
+package-lock.json 
