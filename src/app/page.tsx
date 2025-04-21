@@ -1,3 +1,7 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { toast } from "@/components/shared";
 import Image from "next/image";
 
 export default function Home() {
@@ -97,6 +101,51 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+        <Button 
+          variant="outline"
+          onClick={() => toast.info("Info toast notification")}
+        >
+          Info
+        </Button>
+        <Button 
+          variant="default"
+          onClick={() => toast.success("Success toast notification")}
+        >
+          Success
+        </Button>
+        <Button 
+          variant="secondary"
+          onClick={() => toast.message("Default toast notification")}
+        >
+          Default
+        </Button>
+        <Button 
+          variant="destructive"
+          onClick={() => toast.error("Error toast notification")}
+        >
+          Error
+        </Button>
+        <Button 
+          variant="ghost"
+          onClick={() => toast.warning("Warning toast notification")}
+        >
+          Warning
+        </Button>
+        <Button 
+          variant="link"
+          onClick={() => 
+            toast.promise(
+              new Promise(resolve => setTimeout(resolve, 2000)),
+              {
+                loading: 'Loading...',
+                success: 'Promise resolved!',
+                error: 'Promise rejected!'
+              }
+            )
+          }
+        >
+          Promise
+        </Button>
       </footer>
     </div>
   );
